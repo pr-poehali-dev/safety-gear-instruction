@@ -362,6 +362,49 @@ export default function Index() {
         )}
       </section>
 
+      {/* Video */}
+      <section className="border-t border-border py-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-yellow-500/30 bg-yellow-500/10 mb-6">
+              <Icon name="Play" size={16} className="text-neon" />
+              <span className="text-yellow-400 text-sm font-medium uppercase tracking-wide">Видеоинструкция</span>
+            </div>
+            <h2 className="font-heading text-5xl font-bold uppercase tracking-tight">
+              Смотрите <span className="text-neon">в действии</span>
+            </h2>
+            <p className="text-muted-foreground text-lg mt-4 max-w-xl mx-auto">
+              Наглядная демонстрация правильного надевания и выбора защитной каски
+            </p>
+          </div>
+
+          <div className="relative max-w-4xl mx-auto">
+            <div
+              className="relative rounded-3xl overflow-hidden border border-yellow-500/20"
+              style={{ boxShadow: "0 0 60px hsl(45 100% 52% / 0.15), 0 0 120px hsl(45 100% 52% / 0.06)" }}
+            >
+              <div className="aspect-video">
+                <iframe
+                  src="https://www.youtube.com/embed/2Sodfq673DM?rel=0&modestbranding=1"
+                  title="Видеоинструкция по надеванию защитной каски"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
+            </div>
+            {/* decorative corner labels */}
+            <div className="absolute -top-3 -left-3 bg-yellow-500 text-background rounded-xl px-3 py-1 font-heading font-bold text-xs uppercase">
+              ГОСТ EN 397-2020
+            </div>
+            <div className="absolute -bottom-3 -right-3 bg-card border border-border rounded-xl px-4 py-2 flex items-center gap-2 text-sm text-muted-foreground">
+              <Icon name="Youtube" size={16} className="text-red-500" />
+              YouTube
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Facts */}
       <section className="border-t border-border py-20">
         <div className="max-w-6xl mx-auto px-6">
