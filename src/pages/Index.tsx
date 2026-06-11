@@ -469,9 +469,14 @@ export default function Index() {
             <span className="text-2xl">⛑️</span>
             <span className="font-heading font-semibold uppercase tracking-wide text-foreground">Безопасность — прежде всего</span>
           </div>
-          <p className="text-muted-foreground text-sm text-center">
-            Инструкция разработана в соответствии с ГОСТ EN 397-2020 «Каски защитные промышленные»
-          </p>
+          <div className="flex flex-col items-center sm:items-end gap-1">
+            <p className="text-muted-foreground text-sm text-center">
+              Инструкция разработана в соответствии с ГОСТ EN 397-2020 «Каски защитные промышленные»
+            </p>
+            <p className="text-muted-foreground/60 text-xs">
+              Котов И.Т. · Группа 305-21
+            </p>
+          </div>
         </div>
       </footer>
     </div>
