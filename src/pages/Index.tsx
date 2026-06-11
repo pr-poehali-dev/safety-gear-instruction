@@ -393,10 +393,6 @@ export default function Index() {
                 />
               </div>
             </div>
-            {/* decorative corner labels */}
-            <div className="absolute -top-3 -left-3 bg-yellow-500 text-background rounded-xl px-3 py-1 font-heading font-bold text-xs uppercase">
-              ГОСТ EN 397-2020
-            </div>
             <div className="absolute -bottom-3 -right-3 bg-card border border-border rounded-xl px-4 py-2 flex items-center gap-2 text-sm text-muted-foreground">
               <Icon name="Youtube" size={16} className="text-red-500" />
               YouTube
