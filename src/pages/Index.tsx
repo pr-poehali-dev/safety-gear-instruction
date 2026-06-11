@@ -385,7 +385,7 @@ export default function Index() {
             >
               <div className="aspect-video">
                 <iframe
-                  src="https://www.youtube.com/embed/2Sodfq673DM?rel=0&modestbranding=1"
+                  src="https://www.youtube.com/embed/AOIRUg06ShQ?start=6&rel=0&modestbranding=1"
                   title="Видеоинструкция по надеванию защитной каски"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
