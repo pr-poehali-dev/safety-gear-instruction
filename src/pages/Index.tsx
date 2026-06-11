@@ -8,6 +8,7 @@ const steps = [
   {
     id: 1,
     title: "Осмотрите каску",
+    image: "https://cdn.poehali.dev/projects/2a49e466-0694-47af-bb09-b432e50f4b6e/files/1aa89fe6-8bfb-4dbd-afae-04af17f9293e.jpg",
     icon: "Search",
     color: "#F5C518",
     description: "Согласно ГОСТ EN 397-2020, перед каждым использованием необходимо провести визуальный осмотр каски. Корпус, подвесная система и потовый обод должны быть без видимых повреждений.",
@@ -23,6 +24,7 @@ const steps = [
   {
     id: 2,
     title: "Отрегулируйте подвесную систему",
+    image: "https://cdn.poehali.dev/projects/2a49e466-0694-47af-bb09-b432e50f4b6e/files/51210b15-a7da-48e5-89fe-5b587ee0d352.jpg",
     icon: "Settings2",
     color: "#FF6B35",
     description: "ГОСТ EN 397-2020 устанавливает обязательный вертикальный зазор между теменем головы и корпусом каски не менее 25 мм. Подвесная система должна равномерно распределять нагрузку.",
@@ -38,6 +40,7 @@ const steps = [
   {
     id: 3,
     title: "Наденьте каску",
+    image: "https://cdn.poehali.dev/projects/2a49e466-0694-47af-bb09-b432e50f4b6e/files/9c790cdc-da5c-46a8-b679-42e0aef85dd9.jpg",
     icon: "ArrowDown",
     color: "#4CAF50",
     description: "Каска надевается горизонтально, козырьком строго вперёд. ГОСТ EN 397-2020 допускает разворот козырька назад только для касок с соответствующей маркировкой производителя.",
@@ -53,6 +56,7 @@ const steps = [
   {
     id: 4,
     title: "Зафиксируйте подбородочный ремень",
+    image: "https://cdn.poehali.dev/projects/2a49e466-0694-47af-bb09-b432e50f4b6e/files/bca339d2-63b0-4bd3-8a17-c617b1c8068c.jpg",
     icon: "Link",
     color: "#2196F3",
     description: "Подбородочный ремень (при наличии) обеспечивает удержание каски при опрокидывании и боковых ударах. ГОСТ EN 397-2020 устанавливает требования к его прочности — усилие разрыва не менее 150 Н и не более 250 Н.",
@@ -68,6 +72,7 @@ const steps = [
   {
     id: 5,
     title: "Проверьте правильность посадки",
+    image: "https://cdn.poehali.dev/projects/2a49e466-0694-47af-bb09-b432e50f4b6e/files/9df07740-b9e9-4eae-9ac8-72ee6e73095d.jpg",
     icon: "CheckCircle",
     color: "#9C27B0",
     description: "Финальная проверка по требованиям ГОСТ EN 397-2020: каска должна устойчиво держаться на голове, не ограничивать обзор и не оказывать давления на голову.",
@@ -282,7 +287,22 @@ export default function Index() {
                 {isActive && (
                   <div className="px-8 pb-8">
                     <div className="ml-0 sm:ml-[76px]">
-                      <p className="text-foreground/90 text-base leading-relaxed mb-6">{step.description}</p>
+                      {/* Image + description row */}
+                      <div className="flex flex-col sm:flex-row gap-6 mb-6">
+                        <div className="flex-shrink-0">
+                          <div
+                            className="w-full sm:w-52 h-40 rounded-2xl overflow-hidden border"
+                            style={{ borderColor: step.color + "40", boxShadow: `0 0 20px ${step.color}20` }}
+                          >
+                            <img
+                              src={step.image}
+                              alt={step.title}
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                        </div>
+                        <p className="text-foreground/90 text-base leading-relaxed">{step.description}</p>
+                      </div>
 
                       <div className="grid md:grid-cols-2 gap-6 mb-6">
                         <div>
