@@ -254,7 +254,6 @@ export default function Index() {
 
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-3 mb-1">
-                      <span className="text-2xl">{step.emoji}</span>
                       <h3 className="font-heading text-2xl font-semibold uppercase tracking-wide text-foreground">
                         {step.title}
                       </h3>
@@ -464,11 +463,12 @@ export default function Index() {
 
       {/* Footer */}
       <footer className="border-t border-border py-10">
-        <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <span className="text-2xl">⛑️</span>
-            <span className="font-heading font-semibold uppercase tracking-wide text-foreground">Безопасность — прежде всего</span>
-          </div>
+        <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <img
+            src="https://cdn.poehali.dev/projects/2a49e466-0694-47af-bb09-b432e50f4b6e/bucket/12e5a04d-b0e8-42fd-b141-1ceed826e332.png"
+            alt="СурГУ"
+            className="h-12 object-contain brightness-0 invert opacity-80"
+          />
           <div className="flex flex-col items-center sm:items-end gap-1">
             <p className="text-muted-foreground text-sm text-center">
               Инструкция разработана в соответствии с ГОСТ EN 397-2020 «Каски защитные промышленные»
