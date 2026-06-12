@@ -474,7 +474,7 @@ export default function Index() {
               Инструкция разработана в соответствии с ГОСТ EN 397-2020 «Каски защитные промышленные»
             </p>
             <p className="text-muted-foreground/60 text-xs">
-              Котов И.Т. · Группа 305-21
+              Котов И.Т · Группа 305-21
             </p>
           </div>
         </div>
