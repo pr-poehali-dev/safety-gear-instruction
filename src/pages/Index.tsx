@@ -384,17 +384,17 @@ export default function Index() {
             >
               <div className="aspect-video">
                 <iframe
-                  src="https://www.youtube.com/embed/AOIRUg06ShQ?start=6&rel=0&modestbranding=1"
+                  src="https://vkvideo.ru/video_ext.php?oid=-157777792&id=456239303&hd=2"
                   title="Видеоинструкция по надеванию защитной каски"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
                   allowFullScreen
                   className="w-full h-full"
                 />
               </div>
             </div>
             <div className="absolute -bottom-3 -right-3 bg-card border border-border rounded-xl px-4 py-2 flex items-center gap-2 text-sm text-muted-foreground">
-              <Icon name="Youtube" size={16} className="text-red-500" />
-              YouTube
+              <Icon name="Play" size={16} className="text-blue-500" />
+              VK Видео
             </div>
           </div>
         </div>
